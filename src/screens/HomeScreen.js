@@ -20,7 +20,7 @@ const { width } = Dimensions.get('screen');
 const cardWidth = width / 1.8;
 
 const HomeScreen = ({ navigation }) => {
-  const categories = ['All', 'Popular', 'Top Rated', 'Featured', 'Luxury'];
+  const categories = ['All', 'Popular', 'Top Rated', 'Featured'];
   const [selectedCategoryIndex, setSelectedCategoryIndex] = React.useState(0);
   const [activeCardIndex, setActiveCardIndex] = React.useState(0);
   const scrollX = React.useRef(new Animated.Value(0)).current;
